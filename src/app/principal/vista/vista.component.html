@@ -1,0 +1,26 @@
+<h2 class="text-center">Comentarios</h2>
+
+<section class="container-fluid">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>PostID</th>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Comentario</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr *ngFor="let item of listado">
+                <th>{{item.postId}}</th>
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.body}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</section>
